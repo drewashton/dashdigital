@@ -1,0 +1,254 @@
+/* Reset and General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  background-color: #2d51a6; /* Dark blue background for video overlay */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  position: relative;
+  background-color: rgba(45, 81, 166, 0.9); /* Slightly transparent top banner */
+  padding: 20px 0;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5); /* Increased shadow */
+  text-align: center;
+  z-index: 2; /* Ensure the top banner stays above the video overlay */
+}
+
+.logo {
+  width: 110px; /* Adjusted logo width */
+  animation: pulseLogo 2s infinite; /* Added animation for logo */
+}
+
+@keyframes pulseLogo {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.contact-button,
+.social-button,
+.project-button {
+  display: inline-block;
+  width: 150px;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #2d51a6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1), 0 10px 25px rgba(0, 0, 0, 0.5); /* Increased shadow */
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  font-weight: bold; /* Slightly bolder text */
+}
+
+.contact-button:hover,
+.social-button:hover,
+.project-button:hover {
+  background-color: #1a356e;
+  color: white;
+  transform: scale(1.05);
+}
+
+.profile-section,
+.projects-section {
+  text-align: center;
+  padding: 40px 0;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5); /* Increased shadow */
+  border-radius: 15px; /* Added border-radius */
+  overflow: hidden;
+  position: relative;
+  z-index: 1; /* Ensure the sections stay above the video overlay */
+}
+
+.project {
+  margin-bottom: 40px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5); /* Increased shadow */
+  border: 2px solid #2d51a6; /* Dark blue border around each project */
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent white background */
+}
+
+.round-image {
+  width: 100px;
+  height: 100px;
+  background-color: #2d51a6; /* Dark blue background for the round image */
+  border-radius: 50%;
+  margin: 20px auto 0; /* Adjusted spacing from the top of the box */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8); /* Heavier shadow */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.round-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire circle without stretching */
+  border-radius: 50%;
+}
+
+.floating-mild {
+  animation: floatMild 4s infinite;
+}
+
+@keyframes floatMild {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.project-title {
+  color: #2d51a6; /* Dark blue color for project titles */
+  margin-top: 20px; /* Add more space above the project title */
+  font-weight: normal; /* Remove bold from project title */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px 15px 0 0;
+}
+
+.project-details {
+  padding: 20px;
+}
+
+.profile-box,
+.projects-box {
+  border: 2px solid #2d51a6; /* Dark blue border around profile and projects sections */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5); /* Increased shadow */
+  background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent white background */
+}
+
+.profile-picture {
+  width: 120px;
+  height: 120px;
+  background-color: #2d51a6; /* Dark blue background for the profile picture */
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8); /* Heavier shadow */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire circle without stretching */
+  border-radius: 50%;
+}
+
+footer {
+  margin-top: auto;
+  height: 50px;
+  background-color: rgba(45, 81, 166, 0.9); /* Slightly transparent footer */
+  box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.5); /* Increased shadow */
+  text-align: center;
+  padding: 15px 0;
+  position: relative;
+  z-index: 2; /* Ensure the footer stays above the video overlay */
+}
+
+footer p {
+  margin: 0;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-weight: bold; /* Slightly bolder text */
+}
+
+/* Video Background */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(5px); /* Adjust the blur level */
+  background-color: rgba(45, 81, 166, 0.5); /* Dark blue background color with opacity */
+  z-index: -1;
+}
+
+/* Additional styles for the Projects heading */
+.projects-heading {
+  color: white; /* Text color for Projects heading */
+  font-weight: bold; /* Bold font for Projects heading */
+  margin-bottom: 20px; /* Add space between the text and the box */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add text shadow */
+}
+
+/* Add text shadow to all text on the website */
+body,
+h2,
+h3,
+p,
+a,
+footer p {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Adjust text shadow as needed */
+}
+
+@keyframes zoomInLogo {
+  0% {
+    transform: scale(3); /* Start very zoomed in */
+  }
+  100% {
+    transform: scale(1); /* Zoom out to the normal view */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Mobile-friendly styles for the video background */
+  .video-background {
+    display: none;
+  }
+}
