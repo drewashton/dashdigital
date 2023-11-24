@@ -233,14 +233,7 @@ body, h2, h3, a, p, footer p {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Adjust text shadow as needed */
 }
 
-@keyframes zoomInLogo {
-  0% {
-    transform: scale(3); /* Start very zoomed in */
-  }
-  100% {
-    transform: scale(1); /* Zoom out to the normal view */
-  }
-}
+
 
 .fintech-text {
   font-family: 'Roboto', sans-serif;
