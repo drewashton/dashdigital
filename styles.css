@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -403,11 +404,19 @@ h2, h3, a {
 .names-images img:hover {
   transform: scale(1.05); /* Increase the size slightly on hover */
 }
-.names-heading, .services-heading,
+.names-heading,
 .projects-heading {
   color: white;
   font-weight: bold;
   margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.services-heading {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 .mail-image {
@@ -492,3 +501,4 @@ h2, h3, a {
     transform: rotate(360deg);
   }
 }
+
