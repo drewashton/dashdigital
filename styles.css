@@ -1,4 +1,3 @@
-/* Reset and General Styles */
 * {
   margin: 0;
   padding: 0;
@@ -183,9 +182,9 @@ img {
   border-radius: 50%;
 }
 
-footer {
+.main-footer {
   margin-top: auto;
-  height: 50px;
+  height: auto;
   background-color: rgba(45, 81, 166, 0.9); /* Slightly transparent footer */
   box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.5); /* Increased shadow */
   text-align: center;
@@ -194,7 +193,7 @@ footer {
   z-index: 2; /* Ensure the footer stays above the video overlay */
 }
 
-footer p {
+.main-footer p {
   margin: 0;
   color: white;
   position: absolute;
@@ -237,7 +236,7 @@ body, h2, h3, a, p, footer p {
 
 .fintech-text {
   font-family: 'Roboto', sans-serif;
-  font-weight: 500; /* Regular font weight */
+  font-weight: 700; /* Regular font weight */
   margin-bottom: 15px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0);
 }
@@ -319,4 +318,20 @@ body, h2, h3, a, p, footer p {
   width: 265px; /* Adjust the width as needed */
   height: auto;
   border-radius: 0;
+}
+
+.built-by {
+  margin-top: 5px; /* Adjust the spacing between the copyright and the second line */
+}
+
+.second-footer {
+  background-color: white;
+  text-align: center;
+  padding: 0px 0;
+  position: relative;
+}
+
+.second-footer img {
+  max-width: 75px;
+  height: auto;
 }
