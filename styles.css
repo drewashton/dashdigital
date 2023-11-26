@@ -197,14 +197,11 @@ img {
 .main-footer p {
   margin: 0;
   color: white;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
   align-items: center;
-  height: 100%;
   font-weight: bold; /* Slightly bolder text */
+  font-size: 12px;
 }
 
 /* Video Background */
@@ -229,7 +226,7 @@ img {
 }
 
 /* Add text shadow to all text on the website */
-body, h2, h3, a, p, footer p {
+body, h2, h3, a, p {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Adjust text shadow as needed */
 }
 
@@ -274,7 +271,7 @@ body, h2, h3, a, p, footer p {
   margin-top: 10px;
   margin-bottom: -10px;
   animation: twopulseAnimation 5s infinite;
-  transform: translateY(100px); /* Initial position off-screen */
+  transform: translateX(100px); /* Initial position off-screen */
   opacity: 0; /* Initially invisible */
   transition: transform 4s ease, opacity 2s ease;
 }
@@ -289,7 +286,7 @@ body, h2, h3, a, p, footer p {
 }
 
 .des-images img.visible {
-  transform: translateY(0); /* Move to the original position */
+  transform: translateX(0); /* Move to the original position */
   opacity: 1; /* Make visible */
 }
 
