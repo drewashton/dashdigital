@@ -319,6 +319,7 @@ h2, h3, a {
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
   margin-left: -10%;
   margin-right: -10%;
+  padding-bottom: 40px;
 }
 
 .des-images {
@@ -501,4 +502,3 @@ h2, h3, a {
     transform: rotate(360deg);
   }
 }
-
