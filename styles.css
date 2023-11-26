@@ -275,6 +275,27 @@ body, h2, h3, a, p {
   opacity: 0; /* Initially invisible */
   transition: transform 4s ease, opacity 2s ease;
 }
+.asseen-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: -20px;
+}
+.asseen-images img {
+  width: auto;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 0;
+  margin-bottom: 25px;
+}
+.asseen-heading {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 25px;
+  margin-top: 35px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
 .names-images img {
   width: auto;
   height: 135px;
