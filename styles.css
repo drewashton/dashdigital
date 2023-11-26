@@ -241,3 +241,84 @@ body, h2, h3, a, p, footer p {
   margin-bottom: 15px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0);
 }
+.names-section,
+.projects-section {
+  text-align: center;
+  padding: 40px 0;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.names-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: -20px;
+}
+.des-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: -20px;
+}
+.des-images img {
+  width: auto;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 0;
+  margin: -30px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+  animation: twopulseAnimation 5s infinite;
+}
+.names-images img {
+  width: auto;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 0;
+  margin: -30px;
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+  animation: onepulseAnimation 3s infinite;
+}
+
+@keyframes onepulseAnimation {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.085);
+  }
+}
+@keyframes twopulseAnimation {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+.names-images img:hover {
+  transform: scale(1.05); /* Increase the size slightly on hover */
+}
+.names-heading,
+.projects-heading {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.mail-image {
+  text-align: center;
+  margin-top: 0px; /* Adjust this value to control the space between the profile box and the mail image */
+}
+
+.mail-image img {
+  width: 265px; /* Adjust the width as needed */
+  height: auto;
+  border-radius: 0;
+}
