@@ -84,20 +84,27 @@ h1 {
   transform: scale(1.05);
 }
 
-.profile-section,
 .projects-section {
   text-align: center;
   padding: 40px 0;
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5); /* Increased shadow */
   border-radius: 15px; /* Added border-radius */
   overflow: hidden;
   position: relative;
   z-index: 1; /* Ensure the sections stay above the video overlay */
 }
 
+.profile-section {
+  text-align: center;
+  padding: 40px 0;
+  border-radius: 15px; /* Added border-radius */
+  overflow: hidden;
+  position: relative;
+  z-index: 1; /* Ensure the sections stay above the video overlay */
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+}
+
 .project {
   margin-bottom: 40px;
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5); /* Increased shadow */
   border: 2px solid #2d51a6; /* Dark blue border around each project */
   border-radius: 15px;
   overflow: hidden;
@@ -117,12 +124,20 @@ h1 {
   align-items: center;
 }
 
+.services-image img {
+  width: 80px;
+  height: auto;
+  object-fit: cover; /* Ensure the image covers the entire circle without stretching */
+  border-radius: 50%;
+}
+
 .round-image img {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Ensure the image covers the entire circle without stretching */
   border-radius: 50%;
 }
+
 
 .floating-mild {
   animation: floatMild 3s infinite;
@@ -242,12 +257,22 @@ body, h2, h3, a, p {
 .projects-section {
   text-align: center;
   padding: 40px 0;
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   overflow: hidden;
   position: relative;
   z-index: 1;
 }
+
+.stuff-section {
+  text-align: center;
+  padding: 40px 0;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+}
+
 .names-section {
   text-align: center;
   padding: 40px 0;
@@ -272,7 +297,6 @@ body, h2, h3, a, p {
   margin-bottom: 0px;
   height: auto;
   width: 50;
-  animation: floatMild 3s infinite;
   animation: spinOnLoad 0.5s ease-in-out;
 }
 
@@ -283,6 +307,16 @@ body, h2, h3, a, p {
   overflow: hidden;
   position: relative;
   z-index: 1;
+}
+
+.services-section {
+  text-align: center;
+  padding: 40px 0;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
 }
 
 .des-images {
@@ -348,6 +382,15 @@ body, h2, h3, a, p {
     transform: scale(1.085);
   }
 }
+
+@keyframes onepulseAnimation {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.085);
+  }
+}
 @keyframes twopulseAnimation {
   0%, 100% {
     transform: scale(1);
@@ -359,7 +402,7 @@ body, h2, h3, a, p {
 .names-images img:hover {
   transform: scale(1.05); /* Increase the size slightly on hover */
 }
-.names-heading,
+.names-heading, .services-heading,
 .projects-heading {
   color: white;
   font-weight: bold;
