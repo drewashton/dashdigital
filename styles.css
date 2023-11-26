@@ -1,3 +1,4 @@
+/* Reset and General Styles */
 * {
   margin: 0;
   padding: 0;
@@ -256,6 +257,7 @@ body, h2, h3, a, p, footer p {
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: -30px;
+  margin-bottom: 45px;
 }
 .des-images {
   display: flex;
@@ -269,18 +271,26 @@ body, h2, h3, a, p, footer p {
   object-fit: cover;
   border-radius: 0;
   margin: -30px;
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: -10px;
   animation: twopulseAnimation 5s infinite;
+  transform: translateY(100px); /* Initial position off-screen */
+  opacity: 0; /* Initially invisible */
+  transition: transform 4s ease, opacity 2s ease;
 }
 .names-images img {
   width: auto;
-  height: 175px;
+  height: 135px;
   object-fit: cover;
   border-radius: 0;
-  margin: -30px;
+  margin: -52px;
   margin-top: 35px;
   animation: onepulseAnimation 3s infinite;
+}
+
+.des-images img.visible {
+  transform: translateY(0); /* Move to the original position */
+  opacity: 1; /* Make visible */
 }
 
 @keyframes onepulseAnimation {
