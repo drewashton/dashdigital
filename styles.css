@@ -1,4 +1,4 @@
-/* Reset and General Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -66,8 +66,8 @@ h1 {
   margin: 10px;
   border-radius: 30px;
   text-decoration: none;
-  color: #fff;
-  background-color: #2d51a6;
+  color: #2d51a6;
+  background-color: #fff;
   transition: background-color 0.3s ease, color 0.3s ease;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1), 0 10px 25px rgba(0, 0, 0, 0.5); /* Increased shadow */
   text-align: center;
@@ -79,8 +79,8 @@ h1 {
 .contact-button:hover,
 .social-button:hover,
 .project-button:hover {
-  background-color: #1a356e;
-  color: white;
+  background-color: #bebfc2;
+  color: #2d51a6;
   transform: scale(1.05);
 }
 
@@ -100,7 +100,7 @@ h1 {
   overflow: hidden;
   position: relative;
   z-index: 1; /* Ensure the sections stay above the video overlay */
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.8);
 }
 
 .project {
@@ -108,7 +108,7 @@ h1 {
   border: 2px solid #2d51a6; /* Dark blue border around each project */
   border-radius: 15px;
   overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent white background */
+  background-color: rgba(45, 81, 166, 0.85); /* Slightly transparent white background */
 }
 
 .round-image {
@@ -160,7 +160,7 @@ h1 {
 
 .project-title {
   margin-top: 20px; /* Add more space between the project title and the image */
-  color: #2d51a6; /* Dark blue color for project titles */
+  color: #ffffff; /* Dark blue color for project titles */
   font-family: 'Roboto', sans-serif;
   font-weight: 700; /* Regular font weight */
 }
@@ -176,12 +176,12 @@ img {
 }
 
 .profile-box,
-.projects-box {
+.project {
   border: 2px solid #2d51a6; /* Dark blue border around profile and projects sections */
   border-radius: 15px;
   padding: 20px;
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5); /* Increased shadow */
-  background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent white background */
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.8); /* Increased shadow */
+  background-color: rgba(45, 81, 166, 0.70); /* Slightly transparent white background */
 }
 
 .profile-picture {
@@ -248,7 +248,8 @@ img {
 
 /* Add text shadow to all text on the website */
 h2, h3, a {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Adjust text shadow as needed */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Adjust text shadow as needed */
+  color: white;
 }
 
 
@@ -257,7 +258,8 @@ h2, h3, a {
   font-family: 'Roboto', sans-serif;
   font-weight: 700; /* Regular font weight */
   margin-bottom: 15px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0);
+  color: white;
+  text-shadow: 1px 1px 2px rgba(252, 250, 250, 0)
 }
 
 .projects-section {
@@ -427,6 +429,17 @@ h2, h3, a {
 
 .mail-image img {
   width: 265px; /* Adjust the width as needed */
+  height: auto;
+  border-radius: 0;
+}
+
+.pro-image {
+  text-align: center;
+  margin-top: -40px; /* Adjust this value to control the space between the profile box and the mail image */
+}
+
+.pro-image img {
+  width: 170px; /* Adjust the width as needed */
   height: auto;
   border-radius: 0;
 }
