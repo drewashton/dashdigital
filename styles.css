@@ -235,7 +235,8 @@ img {
   object-fit: cover;
   filter: blur(3px); /* Adjust the blur level */
   z-index: -1;
-  background-color: rgb(255, 255, 255)35, 0.7;
+  background-color:rgb(45, 81, 166);
+  opacity: 0.75;
 }
 
 /* Additional styles for the Projects heading */
