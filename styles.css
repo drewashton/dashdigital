@@ -74,6 +74,7 @@ h1 {
   cursor: pointer;
   overflow: hidden;
   font-weight: bold; /* Slightly bolder text */
+  animation: twopulseAnimation 2s infinite;
 }
 
 .contact-button:hover,
@@ -306,7 +307,17 @@ h2, h3, a {
   margin-bottom: 0px;
   height: auto;
   width: 50;
-  animation: spinOnLoad 0.5s ease-in-out;
+  animation: spinOnLoad 0.5s ease-in-out,floatAnimation 2s ease-in-out infinite alternate 0.5s;;
+
+}
+
+@keyframes floatAnimation {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(10px); /* Adjust the value for the desired floating effect */
+  }
 }
 
 .top-section {
@@ -341,7 +352,7 @@ h2, h3, a {
   animation: twopulseAnimation 5s infinite;
   transform: translateX(100px); /* Initial position off-screen */
   opacity: 0; /* Initially invisible */
-  transition: transform 4s ease, opacity 2s ease;
+  transition: transform 3s ease, opacity 2s ease;
 }
 .asseen-images {
   display: flex;
