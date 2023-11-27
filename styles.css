@@ -233,9 +233,9 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: blur(5px); /* Adjust the blur level */
-  background-color: rgba(45, 81, 166, 0.5); /* Dark blue background color with opacity */
+  filter: blur(4px); /* Adjust the blur level */
   z-index: -1;
+  background-color: rgb(255, 255, 255)35, 0.7;
 }
 
 /* Additional styles for the Projects heading */
