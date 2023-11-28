@@ -448,6 +448,7 @@ h2, h3, a {
 .pro-image {
   text-align: center;
   margin-top: -40px; /* Adjust this value to control the space between the profile box and the mail image */
+  margin-bottom: 20px;
 }
 
 .pro-image img {
