@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -258,12 +257,13 @@ img {
 .highlight::after {
   content: "";
   position: absolute;
-  left: 0;
   bottom: 6.5px; /* Adjust this value to control the distance between text and underline */
-  width: 100%;
+  left: -2%; /* Adjust this value to control the extension on the left side */
+  right: -2%;
   height: 14px; /* Adjust this value to control the thickness of the underline */
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 55%, rgb(45, 81, 166) 45%);
   z-index: -1;
+  border-radius: 8px;
 }
 
 /* Add text shadow to all text on the website */
