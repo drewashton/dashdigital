@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Sans 3', sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
@@ -131,6 +131,7 @@ h1 {
   object-fit: cover; /* Ensure the image covers the entire circle without stretching */
   border-radius: 50%;
   text-align: center;
+  box-shadow: 0 7.5px 15px rgba(0, 0, 0, 0.55);
 }
 
 .services-image {
@@ -162,8 +163,8 @@ h1 {
 .project-title {
   margin-top: 20px; /* Add more space between the project title and the image */
   color: #ffffff; /* Dark blue color for project titles */
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700; /* Regular font weight */
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 900; /* Regular font weight */
 }
 
 img {
@@ -257,7 +258,7 @@ h2, h3, a {
 
 
 .fintech-text {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Sans 3', sans-serif;
   font-weight: 700; /* Regular font weight */
   margin-bottom: 15px;
   color: white;
@@ -307,7 +308,7 @@ h2, h3, a {
   margin-bottom: 0px;
   height: auto;
   width: 50;
-  animation: spinOnLoad 0.5s ease-in-out,floatAnimation 2s ease-in-out infinite alternate 0.5s;;
+  animation: spinOnLoad 0.5s ease-in-out,floatAnimation 2s ease-in-out infinite alternate 0.5s;  ;
 
 }
 
@@ -333,6 +334,10 @@ h2, h3, a {
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
   padding-bottom: 40px;
   text-align: center;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 
 .des-images {
@@ -366,6 +371,7 @@ h2, h3, a {
   object-fit: cover;
   border-radius: 0;
   margin-bottom: 25px;
+  
 }
 .asseen-heading {
   color: white;
@@ -461,14 +467,14 @@ h2, h3, a {
   width: 180px; /* Adjust the width as needed */
   height: auto;
   border-radius: 0;
-  margin-bottom: -5px;
+  margin-bottom: -6px;
 }
 
 .title2-image img {
   width: 180px; /* Adjust the width as needed */
   height: auto;
   border-radius: 0;
-  margin-bottom: -5px;
+  margin-bottom: -6px;
   margin-top: 35px;
 }
 
