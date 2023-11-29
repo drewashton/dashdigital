@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -263,7 +264,7 @@ img {
   height: 14px; /* Adjust this value to control the thickness of the underline */
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 55%, rgb(45, 81, 166) 45%);
   z-index: -1;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 /* Add text shadow to all text on the website */
