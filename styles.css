@@ -130,7 +130,6 @@ h1 {
   object-fit: cover; /* Ensure the image covers the entire circle without stretching */
   border-radius: 50%;
   text-align: center;
-  box-shadow: 0 7.5px 15px rgba(0, 0, 0, 0.55);
 }
 
 .services-image {
