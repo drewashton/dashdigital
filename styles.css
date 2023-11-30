@@ -257,10 +257,10 @@ img {
 .highlight::after {
   content: "";
   position: absolute;
-  bottom: 5px;
-  left: -4%;
-  right: -4%;
-  height: 10px;
+  bottom: 6px;
+  left: -3%;
+  right: -3%;
+  height: 6px;
   background: linear-gradient(to right, #2d51a6, #2d51a6); /* Adjust these color values to your desired shade of blue */
   z-index: -1;
   border-radius: 8px;
