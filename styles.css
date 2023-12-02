@@ -74,7 +74,6 @@ h1 {
   overflow: hidden;
   font-weight: bold; /* Slightly bolder text */
   animation: twopulseAnimation 2s infinite;
-  border: 3px solid #2d51a6;
 }
 
 .contact-button:hover,
@@ -144,6 +143,7 @@ h1 {
   height: 100%;
   object-fit: cover; /* Ensure the image covers the entire circle without stretching */
   border-radius: 50%;
+  border: 3px solid #2d51a6;
 }
 
 
