@@ -74,6 +74,7 @@ h1 {
   overflow: hidden;
   font-weight: bold; /* Slightly bolder text */
   animation: twopulseAnimation 2s infinite;
+  border: 3px solid #2d51a6;
 }
 
 .contact-button:hover,
@@ -130,6 +131,7 @@ h1 {
   object-fit: cover; /* Ensure the image covers the entire circle without stretching */
   border-radius: 50%;
   text-align: center;
+  border: 3px solid #2d51a6;
 }
 
 .services-image {
@@ -177,7 +179,7 @@ img {
 
 .profile-box,
 .project {
-  border: 2px solid #2d51a6; /* Dark blue border around profile and projects sections */
+  border: 3px solid #2d51a6; /* Dark blue border around profile and projects sections */
   border-radius: 15px;
   padding: 20px;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.8); /* Increased shadow */
@@ -195,6 +197,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 3px solid #2d51a6;
 }
 
 .profile-picture img {
