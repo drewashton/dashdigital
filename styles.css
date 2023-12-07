@@ -18,6 +18,28 @@
   box-sizing: border-box;
 }
 
+
+.typewriter-heading {
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 24px;
+  border-right: 0.1em solid #000; /* Adjust the color of the cursor */
+}
+
+.cursor {
+  animation: blink-cursor 0.7s infinite;
+}
+
+@keyframes blink-cursor {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+
+
+
 body {
   font-family: 'Source Sans 3', sans-serif;
   margin: 0;
