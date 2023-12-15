@@ -110,6 +110,7 @@ h1 {
   overflow: hidden;
   font-weight: bold; /* Slightly bolder text */
   animation: twopulseAnimation 2s infinite;
+  text-shadow: none;
 }
 
 .contact-button:hover,
