@@ -18,6 +18,9 @@
   box-sizing: border-box;
 }
 
+  .no-typewriter-effect {
+    margin-bottom: 10px;
+  }
 
 .typewriter-heading {
   overflow: hidden;
