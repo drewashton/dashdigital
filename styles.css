@@ -85,7 +85,7 @@ header {
 nav {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 h1 {
