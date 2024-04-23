@@ -426,7 +426,7 @@ h2, h3, a {
   margin: -30px;
   margin-top: 10px;
   margin-bottom: -10px;
-  opacity: 0; /* Initially invisible */
+  opacity: 1; /* Initially invisible */
   transition: transform 3s ease, opacity 2s ease;
 }
 
