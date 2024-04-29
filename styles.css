@@ -435,15 +435,28 @@ h2, h3, a {
 }
 
 .slide-in-left {
-  transform: translateX(-100%);
-  animation: slideInLeft 1s ease-in-out forwards;
+  animation: zoomIn 1.2s ease-out;
 }
 
 .slide-in-right {
-  transform: translateX(100%);
-  animation: slideInRight 1s ease-in-out forwards;
+  animation: zoomIn 1.2s ease-out;
 }
 
+@keyframes zoomIn {
+  from {
+    transform: scale(0); /* Initial scale */
+    opacity: 0; /* Initial opacity */
+  }
+  to {
+    transform: scale(1); /* Final scale */
+    opacity: 1; /* Final opacity */
+  }
+}
+
+.element-to-animate {
+  animation: zoomIn 1.2s ease-out;
+}
+  
 @keyframes slideInLeft {
   0% { transform: translateX(-100%); }
   100% { transform: translateX(0); }
