@@ -426,6 +426,8 @@ h2, h3, a {
   margin: -30px;
   margin-top: 10px;
   margin-bottom: -10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .des-images img.visible {
