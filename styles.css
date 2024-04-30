@@ -444,12 +444,10 @@ h2, h3, a {
 
 @keyframes zoomIn {
   from {
-    transform: scale(0); /* Initial scale */
-    opacity: 0; /* Initial opacity */
+    transform: scale(0);
   }
   to {
-    transform: scale(1); /* Final scale */
-    opacity: 1; /* Final opacity */
+    transform: scale(1);
   }
 }
 
@@ -458,13 +456,11 @@ h2, h3, a {
 }
   
 @keyframes slideInLeft {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(0); }
+  animation: zoomIn 1.2s ease-out;
 }
 
 @keyframes slideInRight {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(0); }
+  animation: zoomIn 1.2s ease-out;
 }
 
 .asseen-images {
