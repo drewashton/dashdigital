@@ -502,10 +502,6 @@ h2, h3, a {
   animation: onepulseAnimation 3s infinite;
 }
 
-.des-images img.visible {
-  transform: translateX(0); /* Move to the original position */
-  opacity: 1; /* Make visible */
-}
 
 @keyframes onepulseAnimation {
   0%, 100% {
